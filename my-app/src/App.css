@@ -36,3 +36,24 @@
     transform: rotate(360deg);
   }
 }
+
+.phonebook {
+  margin: 50px;
+}
+
+h1,
+h2 {
+  color: #1e90ff;
+}
+
+button:hover,
+button:focus {
+  background-color: #1e90ff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input:hover {
+  border-color: #1e90ff;
+  border-radius: 3px;
+}
