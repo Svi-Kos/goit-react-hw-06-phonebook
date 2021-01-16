@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import store from 'redux/store';
+// import * as actions from 'redux/actions';
 import 'modern-normalize/modern-normalize.css';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// store.dispatch(actions.deleteContact(5));
+// console.log(store.getState());
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root'),
 );
