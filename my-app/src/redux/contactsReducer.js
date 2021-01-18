@@ -2,9 +2,8 @@ import { combineReducers } from 'redux';
 import { createReducer } from '@reduxjs/toolkit';
 // import * as actionTypes from 'redux/types';
 import * as actions from 'redux/actions';
-import testContacts from 'contacts.json';
 
-const itemsReducer = createReducer(testContacts, {
+const itemsReducer = createReducer([], {
   [actions.addContact]: (state, { payload }) => {
     const uniqName = state.filter(contact => payload.name === contact.name);
     return uniqName.length !== 1
